@@ -1,12 +1,27 @@
-@import "portlet_hello_world";
-
 @import "fonts";
 
 body {
 	background-color: $bg-color;
 }
 
-.container-fluid-1280 .row {
+.container-fluid-1824 {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1824px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container-fluid-1824:before, .container-fluid-1824:after {
+    content: " ";
+    display: table;
+}
+
+.container-fluid-1824:after {
+    clear: both;
+}
+
+.container-fluid-1824 .row {
 	margin-left: 15px;
 	margin-right: 15px;
 }
@@ -329,10 +344,7 @@ nav {
 .portlet-title-text {
 	color: #000;
 	font-family: $primary-font;
-	font-size: 20px;
-	font-weight: 600;
 	font-style: normal;
-	margin: 0 0 20px;
 	max-width: 100%;
 	padding-bottom: 10px;
 	position: relative;
@@ -340,6 +352,11 @@ nav {
 	overflow: hidden;
 	vertical-align: middle;
 	width: 100%;
+	font-size: 1.8em;
+    font-weight: 500;
+    letter-spacing: normal;
+    line-height: 24px;
+    margin-bottom: 15px;
 }
 
 .user-icon-default {
@@ -414,137 +431,9 @@ nav {
 	}
 }
 
-/**Wiki**/
+@import "grow/_wiki.scss";
 
-.portlet-barebone.portlet-wiki {
-	h4 {
-		&.text-default {
-			color: #060606;
-			font-size: 25px;
-			font-weight: 600;
-			line-height: 42px;
-			margin: 15px 0 15px 0;
-			text-transform: capitalize;
-		}
-	}
-
-	.attachments.row {
-		margin: 20px !important;	
-	}
-
-	fieldset.add-comment {
-		background-color: #f5f5f5;
-		padding: 20px 30px;
-		margin-bottom: 50px;
-	}
-
-	.list-group {
-		box-shadow: none;
-	}
-
-	.navbar-default {
-		 @include box-shadow(none);
-		 min-height: 40px;
-		 padding: 0 15px;
-	}
-
-	.navbar-nav {
-		border-bottom: 1px solid #ddd;
-		float: none;
-		padding: 0px;
-
-		li {
-			padding: 0px;
-			margin-right: 10px;
-
-			a {
-				display: block;
-				padding: 5px 8px;
-				text-transform: capitalize;
-				font-size: 13px;
-				color: #777;
-			}
-
-			&.active {
-				border-bottom: 2px solid transparent;
-				border-bottom-color: $skincolor;
-				
-				a {
-					color: $skincolor;
-				}
-			}
-
-			&:hover {
-				a {
-					color: $skincolor;
-				}
-			}
-		}
-	}
-
-	.wiki-content {
-		h1 {
-			color: $skincolor;
-			margin: 15px 0 25px 0;
-		}
-		h4.text-default {
-			margin-left: 0
-		}
-	}
-
-	.col-md-4.col-xs-12 {
-		display:none;
-	}
-
-	.owl-theme {
-		h3 {
-			font-size: 21px;
-
-			a:hover, a:focus {
-				color: $skincolor;
-				text-decoration: none;
-			}
-		}
-
-		.owl-controls {
-			margin-top: 10px;
-			text-align: right;
-			position: absolute;
-			right:20px;
-			bottom: 0px;
-
-			.owl-buttons {
-				div {
-					padding: 0px;
-					@include border-radius(0px);
-					background-color: transparent;
-					font-size: 30px;
-					color: $skincolor;
-				}
-			}
-		}
-	}
-}
-
-/** Log In **/
-#portlet_com_liferay_login_web_portlet_LoginPortlet {
-    padding: 20px;
-    background-color: #f5f5f8;
-
-    form a {
-        display: inline-block;
-        margin-left: 5px;
-        @media screen and (max-width: 320px) {
-            margin-top: 10px;
-        }
-    }
-
-    .btn-fb-login{
-        background-color: #3b5998;
-        color:#fff;
-        @include border-radius (3px);
-    }
-}
+@import "grow/_log-in.scss";
 
 /*****************search results*******************/
 
