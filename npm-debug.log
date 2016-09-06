@@ -1,0 +1,92 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'C:\\Users\\zsagia\\AppData\\Roaming\\npm\\node_modules\\assan-sign-in-themelet',
+1 verbose cli   'C:\\Users\\Szilvia',
+1 verbose cli   'Kadar\\AppData\\Roaming\\npm\\node_modules\\assan-search-results-themelet' ]
+2 info using npm@3.8.3
+3 info using node@v5.10.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData C:\Users\zsagia\AppData\Roaming\npm\node_modules\assan-sign-in-themelet
+8 silly fetchPackageMetaData C:\Users\Szilvia
+9 silly fetchPackageMetaData Kadar\AppData\Roaming\npm\node_modules\assan-search-results-themelet
+10 silly fetchOtherPackageData C:\Users\zsagia\AppData\Roaming\npm\node_modules\assan-sign-in-themelet
+11 silly cache add args [ 'C:\\Users\\zsagia\\AppData\\Roaming\\npm\\node_modules\\assan-sign-in-themelet',
+11 silly cache add   null ]
+12 verbose cache add spec C:\Users\zsagia\AppData\Roaming\npm\node_modules\assan-sign-in-themelet
+13 silly fetchOtherPackageData C:\Users\Szilvia
+14 silly cache add args [ 'C:\\Users\\Szilvia', null ]
+15 verbose cache add spec C:\Users\Szilvia
+16 silly fetchOtherPackageData Kadar\AppData\Roaming\npm\node_modules\assan-search-results-themelet
+17 silly cache add args [ 'Kadar\\AppData\\Roaming\\npm\\node_modules\\assan-search-results-themelet',
+17 silly cache add   null ]
+18 verbose cache add spec Kadar\AppData\Roaming\npm\node_modules\assan-search-results-themelet
+19 silly cache add parsed spec Result {
+19 silly cache add   raw: 'C:\\Users\\zsagia\\AppData\\Roaming\\npm\\node_modules\\assan-sign-in-themelet',
+19 silly cache add   scope: null,
+19 silly cache add   name: null,
+19 silly cache add   rawSpec: 'C:\\Users\\zsagia\\AppData\\Roaming\\npm\\node_modules\\assan-sign-in-themelet',
+19 silly cache add   spec: 'C:\\Users\\zsagia\\AppData\\Roaming\\npm\\node_modules\\assan-sign-in-themelet',
+19 silly cache add   type: 'local' }
+20 silly cache add parsed spec Result {
+20 silly cache add   raw: 'C:\\Users\\Szilvia',
+20 silly cache add   scope: null,
+20 silly cache add   name: null,
+20 silly cache add   rawSpec: 'C:\\Users\\Szilvia',
+20 silly cache add   spec: 'C:\\Users\\Szilvia',
+20 silly cache add   type: 'local' }
+21 silly cache add parsed spec Result {
+21 silly cache add   raw: 'Kadar\\AppData\\Roaming\\npm\\node_modules\\assan-search-results-themelet',
+21 silly cache add   scope: null,
+21 silly cache add   name: null,
+21 silly cache add   rawSpec: 'Kadar\\AppData\\Roaming\\npm\\node_modules\\assan-search-results-themelet',
+21 silly cache add   spec: 'D:\\design\\grow-theme\\Kadar\\AppData\\Roaming\\npm\\node_modules\\assan-search-results-themelet',
+21 silly cache add   type: 'local' }
+22 error addLocal Could not install C:\Users\zsagia\AppData\Roaming\npm\node_modules\assan-sign-in-themelet
+23 silly fetchPackageMetaData Error: ENOENT: no such file or directory, open 'C:\Users\zsagia\AppData\Roaming\npm\node_modules\assan-sign-in-themelet'
+23 silly fetchPackageMetaData     at Error (native)
+23 silly fetchPackageMetaData  error for C:\Users\zsagia\AppData\Roaming\npm\node_modules\assan-sign-in-themelet { [Error: ENOENT: no such file or directory, open 'C:\Users\zsagia\AppData\Roaming\npm\node_modules\assan-sign-in-themelet']
+23 silly fetchPackageMetaData   errno: -4058,
+23 silly fetchPackageMetaData   code: 'ENOENT',
+23 silly fetchPackageMetaData   syscall: 'open',
+23 silly fetchPackageMetaData   path: 'C:\\Users\\zsagia\\AppData\\Roaming\\npm\\node_modules\\assan-sign-in-themelet' }
+24 error addLocal Could not install C:\Users\Szilvia
+25 silly fetchPackageMetaData Error: ENOENT: no such file or directory, open 'C:\Users\Szilvia'
+25 silly fetchPackageMetaData     at Error (native)
+25 silly fetchPackageMetaData  error for C:\Users\Szilvia { [Error: ENOENT: no such file or directory, open 'C:\Users\Szilvia']
+25 silly fetchPackageMetaData   errno: -4058,
+25 silly fetchPackageMetaData   code: 'ENOENT',
+25 silly fetchPackageMetaData   syscall: 'open',
+25 silly fetchPackageMetaData   path: 'C:\\Users\\Szilvia' }
+26 error addLocal Could not install D:\design\grow-theme\Kadar\AppData\Roaming\npm\node_modules\assan-search-results-themelet
+27 silly fetchPackageMetaData Error: ENOENT: no such file or directory, open 'D:\design\grow-theme\Kadar\AppData\Roaming\npm\node_modules\assan-search-results-themelet'
+27 silly fetchPackageMetaData     at Error (native)
+27 silly fetchPackageMetaData  error for Kadar\AppData\Roaming\npm\node_modules\assan-search-results-themelet { [Error: ENOENT: no such file or directory, open 'D:\design\grow-theme\Kadar\AppData\Roaming\npm\node_modules\assan-search-results-themelet']
+27 silly fetchPackageMetaData   errno: -4058,
+27 silly fetchPackageMetaData   code: 'ENOENT',
+27 silly fetchPackageMetaData   syscall: 'open',
+27 silly fetchPackageMetaData   path: 'D:\\design\\grow-theme\\Kadar\\AppData\\Roaming\\npm\\node_modules\\assan-search-results-themelet' }
+28 silly rollbackFailedOptional Starting
+29 silly rollbackFailedOptional Finishing
+30 silly runTopLevelLifecycles Starting
+31 silly runTopLevelLifecycles Finishing
+32 silly install printInstalled
+33 verbose stack Error: ENOENT: no such file or directory, open 'C:\Users\zsagia\AppData\Roaming\npm\node_modules\assan-sign-in-themelet'
+33 verbose stack     at Error (native)
+34 verbose cwd D:\design\grow-theme
+35 error Windows_NT 10.0.10586
+36 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "C:\\Users\\zsagia\\AppData\\Roaming\\npm\\node_modules\\assan-sign-in-themelet" "C:\\Users\\Szilvia" "Kadar\\AppData\\Roaming\\npm\\node_modules\\assan-search-results-themelet"
+37 error node v5.10.0
+38 error npm  v3.8.3
+39 error path C:\Users\zsagia\AppData\Roaming\npm\node_modules\assan-sign-in-themelet
+40 error code ENOENT
+41 error errno -4058
+42 error syscall open
+43 error enoent ENOENT: no such file or directory, open 'C:\Users\zsagia\AppData\Roaming\npm\node_modules\assan-sign-in-themelet'
+44 error enoent ENOENT: no such file or directory, open 'C:\Users\zsagia\AppData\Roaming\npm\node_modules\assan-sign-in-themelet'
+44 error enoent This is most likely not a problem with npm itself
+44 error enoent and is related to npm not being able to find a file.
+45 verbose exit [ -4058, true ]
