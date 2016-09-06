@@ -444,6 +444,12 @@ nav {
 
     	.form-control{
 		    height: 38px;
+			display: table-cell;
+			position: relative;
+			z-index: 2;
+			float: left;
+			width: 100%;
+			margin-bottom: 0;
 		}
 
 		button {
@@ -464,9 +470,13 @@ nav {
 
 	.list-group-item {
 		h5 {
-			font-size: 18px;
-		    font-weight:600;
 		    margin-bottom: 0px;
+			line-height: 24px;
+			font-size: 18px;
+			
+			strong {
+				font-weight:600;
+			}
 
 		    a {
 		    	color:$skincolor;
@@ -479,14 +489,33 @@ nav {
 		h6 {
 			padding: 0;
 			margin-bottom: 0px;
-		
 			
-		    text-default {
-							margin: 10px 0;
-							color:#666;
-							font-weight: 400;				
+		    &.text-default {
+				margin: 10px 0;
+				color:#666;
+				font-weight: normal;
+				font-size: 15px;
 			}
-		}
+			
+			.taglib-asset-tags-summary {
+				color:#999;
+				font-size: 14px;
+				margin-right: 0px;
+				@include box-shadow (none);
+				text-transform: capitalize;
+				
+				.badge {
+					font-size: 14px;
+					background-color: transparent;
+					color: #999;
+					font-weight: normal;
+					a:hover{
+						color:$skincolor;
+						text-decoration: underline;	
+					}
+					
+				}
+			}
 		}
 	}
 }
@@ -503,12 +532,9 @@ nav {
 }
 
 .link-ul li{
-    font-size: 12px;
+    
 }
-.link-ul li a:hover{
-    color:$skincolor;
-    text-decoration: underline;
-}
+.link-ul li 
 
 
 .results-box .btn {
@@ -519,12 +545,10 @@ nav {
     border: none;
     font-size: 14px;
 }
-.results-box .btn:hover, .results-box .btn:focus{
+.results-box .btn:hover, .results-box .btn:focus {
     @include box-shadow (none);
 }
 
-
-}
 .results-sidebar-box ul li a{
     color:#999;
 }
