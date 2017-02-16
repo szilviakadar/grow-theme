@@ -136,5 +136,13 @@
 
 	.wiki-body {
 		margin: 10px 0 10px 50px !important;
+
+		a {
+			color: $skincolor;
+		}
+
+		a:hover, a:focus {
+			color: $hover-skincolor;
+		}
 	}
 }
